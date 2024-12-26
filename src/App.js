@@ -13,15 +13,15 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div className="flex relative dark:bg-main-dark-bg">
-          <div className="fixed right-4 bottom-4" style={{ zIndex: '1000' }}>
+        <div className="flex relative dark:bg-black ">
+          <div className="fixed right-4 bottom-4" style={{ zIndex:'1000' }}>
             
             <Tooltip title="Settings" arrow >
             <button 
             type="button"
             className="text-3xl p-3
             hover:drop-shadow-xl
-            hover:bg-light-gray text-white"
+            hover:bg-gray-50 text-white"
             style={{background: 'blue', borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -49,7 +49,7 @@ const App = () => {
             {/* // activeMenu ? 'dark:bd-main-bg bg-main-bg min-h screen md:ml-72 w-full'
             //   :
             //   'dark:bd-main-bg bg-main-bg min-h screen md:ml-72 w-full flex-2' */}
-          <div className={ `dark:bd-main-bg bg-main-bg min-h screen w-full
+          <div className={ `dark:bg-main-bg bg-main-bg min-h screen w-full
            ${activeMenu ? 'md:ml-72' : 'flex-2'} `
           }>
               <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
